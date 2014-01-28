@@ -5,5 +5,5 @@
 Install with [component(1)](http://component.io):
 
 ```
-$ component install fredsterss/list-tabs
+$ component install fredsterss/tabify
 ```
