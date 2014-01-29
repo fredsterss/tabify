@@ -1,0 +1,7 @@
+.active {
+  text-decoration: underline;
+}
+
+.hide {
+  display: none;
+}
