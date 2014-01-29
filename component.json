@@ -2,14 +2,19 @@
   "name": "tabify",
   "repo": "fredsterss/tabify",
   "description": "convert a list to tabs",
-  "version": "0.0.1",
-  "keywords": ["tabs", "ui"],
+  "version": "1.0.0",
+  "keywords": ["tabs", "ui", "tabify"],
   "dependencies": {
-    "component/emitter": "*"
+    "component/emitter": "*",
+    "component/classes": "*",
+    "component/event": "*"
   },
   "license": "MIT",
   "main": "lib/index.js",
   "scripts": [
     "lib/index.js"
+  ],
+  "styles": [
+    "lib/index.css"
   ]
 }
