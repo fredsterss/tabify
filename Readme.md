@@ -30,4 +30,4 @@ Expected structure is:
 </div>
 ```
 
-For more intel, check out the [example.html](fredsterss/tabify/blob/master/test.html).
+Tabify prioritises convention over DOM configuration, so mismatching links / targets will be ignored by Tabify. For more intel, check out the [example.html](example.html).
