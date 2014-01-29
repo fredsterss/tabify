@@ -13,7 +13,7 @@ Your document must have a valid DOCTYPE otherwise IE doesn't support ``querySele
 ## API
 
 ### Tabify(linksEl, targetsEl)
-Turns ``<li>`` children of ``linksEl`` into tabs, toggling visibility on the corresponding ``targetsEl``.
+Turns ``<li>`` children of ``linksEl`` into tabs, toggling visibility on the corresponding ``targetsEl`` children.
 
 Expected structure is:
 ```html
