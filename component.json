@@ -13,8 +13,5 @@
   "main": "lib/index.js",
   "scripts": [
     "lib/index.js"
-  ],
-  "styles": [
-    "lib/index.css"
   ]
 }
