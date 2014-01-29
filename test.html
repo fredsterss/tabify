@@ -1,22 +1,27 @@
+<!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
   <body>
-    <script src="build/build.js"></script>
-    <script>
-      var list-tabs = require("list-tabs");
-      var tabs = list-tabs(document.getElementById('tabs'));
-    </script>
-
     <ol id="tabs">
       <li>Tab 1</li>
       <li>Tab 2</li>
       <li>Tab 3</li>
+      <li>Tab 4</li>
     </ol>
 
-    <div id="tab-0">Content for tab 0</div>
-    <div id="tab-1">Content for tab 1</div>
-    <div id="tab-2">Content for tab 2</div>
-    <div id="tab-3">Content for tab 3</div>
+    <div id="tabs-holder">
+      <div>Content for tab 0</div>
+      <div>Content for tab 1</div>
+      <div>Content for tab 2<div class="nested">hai</div></div>
+      <div>Content for tab 3</div>
+    </div>
 
+    <script src="build/build.js"></script>
+    <script>
+      var tabify = require("tabify");
+      var tabs = tabify(document.getElementById('tabs'), document.getElementById('tabs-holder'));
+    </script>
   </body>
 </html>
