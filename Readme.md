@@ -2,7 +2,7 @@
 
 [Component](https://github.com/component/component) for turning a list into tabs.
 
-Inspired by [stagas/tabify](https://github.com/stagas/tabify) but without all the DOM configuration and works in IE.
+Inspired by [stagas/tabify](https://github.com/stagas/tabify) but without all the DOM configuration and with IE support.
 
 ## Installation
 
