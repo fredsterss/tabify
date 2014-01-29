@@ -11,7 +11,7 @@ Install with [component(1)](http://component.io):
 ```
 $ component install fredsterss/tabify
 ```
-You will need to style the active tab link class ``.active`` and the hidden tab target class ``.hidden`` to see it working.
+You will need to style the default active tab link class ``.active`` and the hidden tab target class ``.hidden`` to see it working.
 
 Your document must have a valid DOCTYPE otherwise IE doesn't support ``querySelectorAll``.
 
