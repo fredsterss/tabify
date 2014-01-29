@@ -1,4 +1,4 @@
-[Component](https://github.com/component/component) for turning a list into tabs.
+[Component](https://github.com/component/component) for turning a list into tabs. Inspired by [stagas/tabify](https://github.com/stagas/tabify) but without all the DOM configuration and works in IE.
 
 ## Installation
 
@@ -15,7 +15,15 @@ Your document must have a valid DOCTYPE otherwise IE doesn't support ``querySele
 ### Tabify(linksEl, targetsEl)
 Turns ``<li>`` children of ``linksEl`` into tabs, toggling visibility on the corresponding ``targetsEl`` children.
 
-Expected structure is:
+Example usage:
+```js
+var linksEl = document.getElementById('tabs');
+var targetsEl = document.getElementById('tabs-holder');
+
+var tabify = require("tabify");
+var tabs = tabify(linksEl, targetsEl);
+```
+Against the following DOM:
 ```html
 <ul id="tabs">
   <li>tab 1</li>
