@@ -14,3 +14,20 @@ Your document must have a valid DOCTYPE otherwise IE doesn't support ``querySele
 
 ### Tabify(linksEl, targetsEl)
 Turns ``<li>`` children of ``linksEl`` into tabs, toggling visibility on the corresponding ``targetsEl``.
+
+Expected structure is:
+```html
+<ul id="tabs">
+  <li>tab 1</li>
+  <li>tab 2</li>
+  <li>tab 3</li>
+</ul>
+
+<div id="tabs-holder">
+  <div>content for tab 1</div>
+  <div>content for tab 2</div>
+  <div>content for tab 3</div>
+</div>
+```
+
+For more intel, check out the [example.html](fredsterss/tabify/blob/master/test.html).
