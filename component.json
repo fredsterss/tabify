@@ -2,7 +2,7 @@
   "name": "tabify",
   "repo": "fredsterss/tabify",
   "description": "convert a list to tabs",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "keywords": ["tabs", "ui", "tabify"],
   "dependencies": {
     "component/emitter": "*",
