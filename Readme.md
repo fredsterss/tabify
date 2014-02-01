@@ -17,8 +17,8 @@ Your document must have a valid DOCTYPE otherwise IE doesn't support ``querySele
 
 ## API
 
-### Tabify(linksEl, targetsEl, [options])
-Turns ``<li>`` children of ``linksEl`` into tabs, toggling visibility on the corresponding ``targetsEl`` children. Use ``options.hiddenClass`` and ``options.activeClass`` to override the default classes applied to hidden tab content elements and active tab links respectively.
+### Tabify(links, targets, [options])
+Turns an array of ``links`` into tabs that toggle visibility on the corresponding array of ``targets``. Use ``options.hiddenClass`` and ``options.activeClass`` to override the default classes applied to hidden tab content elements and active tab links respectively.
 
 With the following DOM:
 ```html
@@ -36,11 +36,11 @@ With the following DOM:
 ```
 The following javascript tabifys the links.
 ```js
-var linksEl = document.getElementById('tabs');
-var targetsEl = document.getElementById('tabs-holder');
+var links = document.getElementById('tabs').getElementsByTagName('li');
+var targets = document.getElementById('tabs-holder').getElementsByTagName('div');
 
 var tabify = require("tabify");
-var tabs = tabify(linksEl, targetsEl);
+var tabs = tabify(links, targets);
 ```
 
 Tabify prioritises convention over DOM configuration, so mismatching links / targets will be ignored by Tabify. For more intel, check out the [example.html](example.html).

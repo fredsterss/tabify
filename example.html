@@ -18,17 +18,14 @@
     <div id="tabs-holder">
       <div>Content for tab 1</div>
       <div>Content for tab 2</div>
-      <div>Content for tab 3
-        <div class="nested">hai</div>
-      </div>
+      <div>Content for tab 3</div>
       <div>Content for tab 4</div>
-      <div>Content for tab 5 (this tab content is ignored by tabify since there is no corresponding link in #tabs)</div>
     </div>
 
     <script src="build/build.js"></script>
     <script>
       var tabify = require("tabify");
-      var tabs = tabify(document.getElementById('tabs'), document.getElementById('tabs-holder'));
+      var tabs = tabify(document.getElementById('tabs').getElementsByTagName('li'), document.getElementById('tabs-holder').getElementsByTagName('div'));
       window.tabs = tabs;
     </script>
   </body>
